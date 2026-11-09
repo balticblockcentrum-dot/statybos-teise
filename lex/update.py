@@ -6,7 +6,14 @@ from pathlib import Path
 
 from . import config
 
-VERSION = "0.1.0"
+VERSION = "0.2.0"
+
+
+def _ver_tuple(v):
+    try:
+        return tuple(int(x) for x in v.split("."))
+    except ValueError:
+        return (0,)
 
 
 def _get_json(url):
@@ -25,7 +32,7 @@ def check_update():
         if not manifest_asset:
             return None
         data = _get_json(manifest_asset["browser_download_url"])
-    if data.get("version") and data["version"] != VERSION:
+    if data.get("version") and _ver_tuple(data["version"]) > _ver_tuple(VERSION):
         return data
     return None
 
@@ -41,4 +48,21 @@ def apply_update(manifest, staging=None):
     zip_path.write_bytes(data)
     with zipfile.ZipFile(zip_path) as z:
         z.extractall(staging / "extracted")
-    return staging / "extracted"
+    extracted = staging / "extracted"
+    _install(extracted)
+    return extracted
+
+
+def _install(extracted):
+    # config.json ir data/ yra vartotojo duomenys — jų neperrašome
+    preserved = {"config.json", "data"}
+    root = config.ROOT
+    for src in extracted.rglob("*"):
+        if not src.is_file():
+            continue
+        rel = src.relative_to(extracted)
+        if rel.parts[0] in preserved:
+            continue
+        dest = root / rel
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_bytes(src.read_bytes())

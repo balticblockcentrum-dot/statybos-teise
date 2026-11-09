@@ -1,7 +1,6 @@
 import json
 import urllib.request
 from datetime import date
-from pathlib import Path
 
 from . import config
 
@@ -10,7 +9,7 @@ def check_online(url="https://www.e-tar.lt/"):
     try:
         with urllib.request.urlopen(url, timeout=8) as r:
             return r.status == 200
-    except Exception:
+    except Exception:  # noqa: BLE001 — bet koks tinklo triktis = neprisijungęs
         return False
 
 

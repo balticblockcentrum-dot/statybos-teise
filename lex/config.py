@@ -16,7 +16,7 @@ def get_api_key():
     try:
         import keyring
         return keyring.get_password(SERVICE, KEY_USER) or os.environ.get("LEX_LLM_API_KEY")
-    except Exception:
+    except Exception:  # noqa: BLE001 — keyring gali būti neprieinamas, tada env
         return os.environ.get("LEX_LLM_API_KEY")
 
 
