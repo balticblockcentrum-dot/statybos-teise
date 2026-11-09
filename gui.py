@@ -93,7 +93,7 @@ class App:
     def choose_file(self):
         path = filedialog.askopenfilename(
             title="Pasirinkite dokumentą",
-            filetypes=[("Dokumentai", "*.pdf *.docx *.txt *.md"), ("Visi failai", "*.*")],
+            filetypes=[("Dokumentai", "*.pdf *.docx *.txt *.md *.csv"), ("Visi failai", "*.*")],
         )
         if path:
             self.file_path = path

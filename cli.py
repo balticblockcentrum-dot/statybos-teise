@@ -32,7 +32,17 @@ def main():
     sub.add_parser("update", help="Atsiųsti ir įdiegti naujausią versiją (auto-update)")
 
     args = ap.parse_args()
+    try:
+        _dispatch(args)
+    except KeyboardInterrupt:
+        print("\nNutraukta.", file=sys.stderr)
+        sys.exit(130)
+    except Exception as e:  # noqa: BLE001 — aiški klaida vartotojui vietoj traceback
+        print(f"Klaida: {e}", file=sys.stderr)
+        sys.exit(1)
 
+
+def _dispatch(args):
     if args.cmd == "setup":
         import setup_key  # noqa: F401
         return

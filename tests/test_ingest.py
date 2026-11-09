@@ -54,3 +54,21 @@ def test_pdf(tmp_path):
     c.drawString(72, 720, "Rangos sutartis CK 6.644")
     c.save()
     assert "Rangos" in ingest.extract_text(p)
+
+
+def test_empty_txt_rejected(tmp_path):
+    p = tmp_path / "doc.txt"
+    p.write_text("   \n  ", encoding="utf-8")
+    with pytest.raises(ValueError, match="tuščias"):
+        ingest.extract_text(p)
+
+
+def test_scanned_pdf_without_text_rejected(tmp_path):
+    from reportlab.pdfgen import canvas
+
+    p = tmp_path / "scan.pdf"
+    c = canvas.Canvas(str(p))
+    c.showPage()
+    c.save()
+    with pytest.raises(ValueError, match="tuščias"):
+        ingest.extract_text(p)

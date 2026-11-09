@@ -4,12 +4,14 @@ import sys
 import zipfile
 from pathlib import Path
 
+from lex import update
+
 ROOT = Path(__file__).resolve().parent
 REPO = "balticblockcentrum-dot/statybos-teise"
 
 
 def build(version):
-    files = ["cli.py", "gui.py", "setup_key.py", "config.json", "data/corpus.json", "build_release.py"]
+    files = ["cli.py", "gui.py", "setup_key.py", "config.json", "data/corpus.json", "build_release.py", "requirements.txt"]
     files += [p.relative_to(ROOT).as_posix() for p in sorted((ROOT / "lex").glob("*.py"))]
     zip_name = f"statybos-teise-v{version}.zip"
     zip_path = ROOT / zip_name
@@ -29,4 +31,4 @@ def build(version):
 
 
 if __name__ == "__main__":
-    build(sys.argv[1] if len(sys.argv) > 1 else "0.2.0")
+    build(sys.argv[1] if len(sys.argv) > 1 else update.VERSION)
