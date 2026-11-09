@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "note": "Pradinis rinkinys: tikslios straipsnių santraukos su citatomis. Pilnos aktualios redakcijos atnaujinamos iš TAR (tar_sync). Santraukos skirtos paieškai; teismui naudoti tikslią TAR redakciją.",
+    "updated": "2026-11-09"
+  },
+  "provisions": [
+    {
+      "id": "ck-6-154",
+      "law": "Lietuvos Respublikos civilinis kodeksas",
+      "article": "6.154",
+      "title": "Sutarčių laisvės principas",
+      "citation": "CK 6.154 str.",
+      "text": "Šalys turi teisę laisvai sudaryti sutartis ir savo nuožiūra nustatyti tarpusavio teises bei pareigas, išskyrus įstatymų nustatytus atvejus. Galima sudaryti ir įstatymų nenumatytas sutartis, jei tai neprieštarauja įstatymams."
+    },
+    {
+      "id": "ck-6-200",
+      "law": "Lietuvos Respublikos civilinis kodeksas",
+      "article": "6.200",
+      "title": "Prievolių vykdymo principai",
+      "citation": "CK 6.200 str.",
+      "text": "Prievolės turi būti vykdomos sąžiningai, tinkamai, laikantis sutarties, įstatymų ir kitų teisės aktų nustatytų reikalavimų. Vienšalis prievolės nevykdymas ar netinkamas vykdymas užtraukia įstatymų ar sutarties nustatytą atsakomybę."
+    },
+    {
+      "id": "ck-6-71",
+      "law": "Lietuvos Respublikos civilinis kodeksas",
+      "article": "6.71",
+      "title": "Netesybos (bauda, delspinigiai)",
+      "citation": "CK 6.71 str.",
+      "text": "Netesybos yra sutarties ar įstatymo nustatyta piniginė suma, kurią skolininkas privalo sumokėti kreditoriui už prievolės neįvykdymą ar netinkamą įvykdymą (termino praleidimą). Netesybos atlygina nuostolius ta apimtimi, kurios jos nepadengia, jei įstatymas ar sutartis nenumato kitaip."
+    },
+    {
+      "id": "ck-6-644",
+      "law": "Lietuvos Respublikos civilinis kodeksas",
+      "article": "6.644",
+      "title": "Rangos sutarties samprata",
+      "citation": "CK 6.644 str.",
+      "text": "Rangos sutartimi viena šalis (rangovas) įsipareigoja atlikti tam tikrą darbą pagal kitos šalies (užsakovo) užduotį, o užsakovas įsipareigoja sudaryti rangovui būtinas darbo atlikimo sąlygas, priimti darbo rezultatą ir sumokėti sutartą kainą. Statybos rangai taikomos specialiosios CK normos."
+    },
+    {
+      "id": "cpk-135",
+      "law": "Lietuvos Respublikos civilinio proceso kodeksas",
+      "article": "135",
+      "title": "Ieškinio forma ir turinys",
+      "citation": "CPK 135 str.",
+      "text": "Ieškinyje turi būti nurodyta: teismo pavadinimas; šalių procesiniai duomenys; ieškinio dalykas ir pagrindas (faktinės aplinkybės bei jas pagrindžiantys įrodymai); ieškovo reikalavimai; įrodymai ir liudytojai; pridedamų dokumentų sąrašas. Ieškinys turi atitikti įstatymo nustatytus formos reikalavimus, kitaip teismas gali jį atmesti ar trūkumus liepti pašalinti."
+    },
+    {
+      "id": "statybos-ist",
+      "law": "Lietuvos Respublikos statybos įstatymas",
+      "article": null,
+      "title": "Statybos dalyviai, rangovo pareigos, statinio tinkamumas",
+      "citation": "LR statybos įstatymas",
+      "text": "Statybos įstatymas nustato statybos dalyvių (užsakovo, rangovo, projektuotojo, techninio prižiūrėtojo) teises ir pareigas, statybos rangos reikalavimus, statinio pripažinimo tinkamu naudoti tvarką ir atsakomybę už statybos kokybę. Tikslios straipsnių redakcijos tikslinamos iš TAR."
+    },
+    {
+      "id": "dk",
+      "law": "Lietuvos Respublikos darbo kodeksas",
+      "article": null,
+      "title": "Darbo sutartis, jos nutraukimas, darbdavio pareigos",
+      "citation": "LR darbo kodeksas",
+      "text": "Darbo kodeksas reglamentuoja darbo sutarties sudarymą, vykdymą, keitimą ir nutraukimą, darbdavio ir darbuotojo teises bei pareigas, darbo užmokestį, atsakomybę ir ginčų sprendimą. Taikytini straipsniai tikslinami iš TAR pagal konkrečią situaciją."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+release/
+pavyzdys.txt
+*-atsakymas.txt
+*-atsakymas.docx
+test-atsakymas.*
+*.docx
+*.pdf
+.env

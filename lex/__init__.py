@@ -1,0 +1,1 @@
+"""Statybos teisės asistentas — vietinis Lietuvos teisės dokumentų analizės įrankis."""

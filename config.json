@@ -1,0 +1,14 @@
+{
+  "llm": {
+    "base_url": "https://api.openai.com/v1",
+    "model": "gpt-4o-mini",
+    "temperature": 0.2
+  },
+  "corpus": {
+    "dir": "data",
+    "tar_dataset": "https://data.gov.lt/datasets/2613/"
+  },
+  "update": {
+    "app_manifest_url": "https://api.github.com/repos/balticblockcentrum-dot/statybos-teise/releases/latest"
+  }
+}
