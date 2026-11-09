@@ -8,3 +8,4 @@ test-atsakymas.*
 *.docx
 *.pdf
 .env
+setup_key.cmd

@@ -6,7 +6,7 @@ from pathlib import Path
 
 from . import config
 
-VERSION = "0.2.0"
+VERSION = "0.2.1"
 
 
 def _ver_tuple(v):

@@ -1,4 +1,6 @@
 import json
+import time
+import urllib.error
 import urllib.request
 
 from . import config
@@ -52,6 +54,19 @@ def analyze(document_text, provisions, task="analyze"):
         headers={"Content-Type": "application/json", "Authorization": f"Bearer {key}"},
         method="POST",
     )
-    with urllib.request.urlopen(req, timeout=120) as resp:
-        body = json.load(resp)
-    return body["choices"][0]["message"]["content"]
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                body = json.load(resp)
+            return body["choices"][0]["message"]["content"]
+        except urllib.error.HTTPError as e:
+            # laikinos Gemini perkrovos/kvotos klaidos — kartojame su atsarga
+            if e.code in (429, 500, 502, 503, 504) and attempt < 3:
+                time.sleep(3 ** (attempt + 1))
+                continue
+            raise
+        except (urllib.error.URLError, TimeoutError):
+            if attempt < 3:
+                time.sleep(3 ** (attempt + 1))
+                continue
+            raise
