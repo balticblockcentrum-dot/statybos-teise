@@ -9,7 +9,7 @@ REPO = "balticblockcentrum-dot/statybos-teise"
 
 
 def build(version):
-    files = ["cli.py", "setup_key.py", "config.json", "data/corpus.json", "build_release.py"]
+    files = ["cli.py", "gui.py", "setup_key.py", "config.json", "data/corpus.json", "build_release.py"]
     files += [p.relative_to(ROOT).as_posix() for p in sorted((ROOT / "lex").glob("*.py"))]
     zip_name = f"statybos-teise-v{version}.zip"
     zip_path = ROOT / zip_name
