@@ -42,7 +42,10 @@ def main():
         return
     if args.cmd == "check-update":
         m = update.check_update()
-        print("Atnaujinimas:", m or "nenurodytas manifest URL (config.json)")
+        if m:
+            print(f"Nauja versija: {m['version']} (dabartinė {update.VERSION})")
+        else:
+            print(f"Versija {update.VERSION} — naujinimų nėra (manifest: GitHub).")
         return
 
     text = ingest.extract_text(args.file)
