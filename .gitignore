@@ -9,3 +9,5 @@ test-atsakymas.*
 *.pdf
 .env
 setup_key.cmd
+run_gui_demo.py
+.gui_launch_ts
