@@ -66,3 +66,35 @@ def test_analyze_raises_on_400(monkeypatch, llm_setup):
     monkeypatch.setattr(llm.urllib.request, "urlopen", fake_urlopen)
     with pytest.raises(urllib.error.HTTPError):
         llm.analyze("doc", [{"citation": "C", "title": "T", "text": "X"}])
+
+
+def test_model_order_dedupe():
+    cfg = {"model": "a", "fallback_models": ["a", "b", ""]}
+    assert llm._model_order(cfg) == ["a", "b"]
+
+
+def test_system_prompt_defends_company():
+    assert "Baltic block centrum" in llm.SYSTEM
+    assert "apginti" in llm.SYSTEM
+    assert "licencijuotas advokatas" in llm.SYSTEM
+
+
+def test_analyze_falls_back_on_persistent_503(monkeypatch, llm_setup):
+    monkeypatch.setattr(
+        llm.config,
+        "load_config",
+        lambda: {"llm": {"base_url": "https://example.test/v1", "model": "primary", "fallback_models": ["backup"], "temperature": 0.2}},
+    )
+    used = []
+
+    def fake_urlopen(req, timeout=None):
+        model = json.loads(req.data.decode("utf-8"))["model"]
+        used.append(model)
+        if model == "primary":
+            raise urllib.error.HTTPError(req.full_url, 503, "Unavailable", {}, io.BytesIO(b""))
+        return _response("Atsakymas is backup modelio")
+
+    monkeypatch.setattr(llm.urllib.request, "urlopen", fake_urlopen)
+    out = llm.analyze("doc", [{"citation": "C", "title": "T", "text": "X"}])
+    assert out == "Atsakymas is backup modelio"
+    assert used == ["primary", "primary", "backup"]
