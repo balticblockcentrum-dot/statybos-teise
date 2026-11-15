@@ -1,7 +1,7 @@
 {
-  "version": "1.11.1",
-  "date": "2026-11-15",
-  "url": "stabas-1.11.1.zip",
-  "sha256": "5497ad3c458b657eed5aed22b4905dcb92f325179d9b3658551a77f7e59190fd",
-  "notes": "Suma žodžiais F2, F3 ir PVM sąskaitoje; CSV eksportas aktų registrui, mokėjimų žurnalui ir neatliktiems darbams"
+  "version": "1.12.0",
+  "date": "2026-11-16",
+  "url": "stabas-1.12.0.zip",
+  "sha256": "f44079a0c40722e0ce805dd6f4c705b451a77283baa7bd4531be3bcdf0cf66d1",
+  "notes": "Aktų failai: prie kiekvieno akto galima pridėti ir saugoti pasirašytą aktą, skenus, nuotraukas, DOCX/XLSX/DWG/ZIP (peržiūra naršyklėje). Visų sutarčių aktų registras su filtrais (juodraščiai, išrašyti, su skola) ir CSV. F2 aktų importas iš PDF su tekstiniu sluoksniu (Excel importas kaip iki šiol)."
 }
