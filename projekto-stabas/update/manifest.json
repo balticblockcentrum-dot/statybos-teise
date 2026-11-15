@@ -1,7 +1,7 @@
 {
-  "version": "1.9.0",
+  "version": "1.9.1",
   "date": "2026-11-15",
-  "url": "stabas-1.9.0.zip",
-  "sha256": "2f95bc7e31ab9186525521184f96700e54402cd8ecb937653edcd4668bc58e28",
-  "notes": "Failų įkėlimas į dokumentus (mygtukas ir nutempimas), kelių projektų palaikymas, programos langas, automatiniai atnaujinimai"
+  "url": "stabas-1.9.1.zip",
+  "sha256": "d16738a4b129e6c5b9fef2b2f452d14c7ef0d8b9755c046809a6c9c417d873cb",
+  "notes": "Kiekvienas projektas turi savo rekvizitus: naujiems projektams nebelieka Šilalės projektuotojo, projekto numerio ir statybos leidimo, pastato matmenys įrašomi atskirai kiekvienam objektui. Tuščiame projekte neberodomi išgalvoti kiekio neatitikimai."
 }
