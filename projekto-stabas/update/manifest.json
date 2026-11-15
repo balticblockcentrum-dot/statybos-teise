@@ -1,7 +1,7 @@
 {
-  "version": "1.8.1",
+  "version": "1.9.0",
   "date": "2026-11-15",
-  "url": "stabas-1.8.1.zip",
-  "sha256": "e36796729ee0210ede33c7a11ca79a52b2f4b08ad9313820913718b1cc955b14",
-  "notes": "Kelių projektų palaikymas, programos langas, automatiniai atnaujinimai, perkeltų katalogų aptikimas"
+  "url": "stabas-1.9.0.zip",
+  "sha256": "2f95bc7e31ab9186525521184f96700e54402cd8ecb937653edcd4668bc58e28",
+  "notes": "Failų įkėlimas į dokumentus (mygtukas ir nutempimas), kelių projektų palaikymas, programos langas, automatiniai atnaujinimai"
 }
