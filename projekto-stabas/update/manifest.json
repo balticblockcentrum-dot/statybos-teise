@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0",
+  "version": "1.11.1",
   "date": "2026-11-15",
-  "url": "stabas-1.11.0.zip",
-  "sha256": "bc8c3b6a52f24370499d8671c8920db9a4b2723fc86105a331ba0f8c3594488f",
-  "notes": "Nauja: PVM sąskaitos-faktūros su įmonės rekvizitais, mokėjimų žurnalas, sutarties suderinimo PDF, neatliktų darbų ataskaita ir finansinė suvestinė. F2/F3 aktus galima eksportuoti į Excel (.xlsx), o užpildytą oficialią F2 formą – importuoti: programa pati sukuria sutartį, darbų grupes ir mėnesio aktus."
+  "url": "stabas-1.11.1.zip",
+  "sha256": "5497ad3c458b657eed5aed22b4905dcb92f325179d9b3658551a77f7e59190fd",
+  "notes": "Suma žodžiais F2, F3 ir PVM sąskaitoje; CSV eksportas aktų registrui, mokėjimų žurnalui ir neatliktiems darbams"
 }
