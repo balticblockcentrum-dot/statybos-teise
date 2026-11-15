@@ -1,7 +1,7 @@
 {
-  "version": "1.9.1",
+  "version": "1.10.0",
   "date": "2026-11-15",
-  "url": "stabas-1.9.1.zip",
-  "sha256": "d16738a4b129e6c5b9fef2b2f452d14c7ef0d8b9755c046809a6c9c417d873cb",
-  "notes": "Kiekvienas projektas turi savo rekvizitus: naujiems projektams nebelieka Šilalės projektuotojo, projekto numerio ir statybos leidimo, pastato matmenys įrašomi atskirai kiekvienam objektui. Tuščiame projekte neberodomi išgalvoti kiekio neatitikimai."
+  "url": "stabas-1.10.0.zip",
+  "sha256": "85fe5bbef232832cb4bd8980f6ddcc0adb91e4a0606f952ce0fc2e5838112947",
+  "notes": "Nauja skiltis Fotofiksacija: objekto nuotraukos pagal datas, įkėlimas mygtuku arba nutempus, aprašymai, datų keitimas ir trynimas. Nuotraukos saugomos atskirai kiekviename projekte."
 }
