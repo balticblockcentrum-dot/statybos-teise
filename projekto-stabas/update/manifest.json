@@ -1,7 +1,7 @@
 {
-  "version": "1.16.0",
+  "version": "1.16.1",
   "date": "2026-11-16",
-  "url": "stabas-1.16.0.zip",
-  "sha256": "409aa43b3d4b8d8302833fc336f7d5d7d9e097b646fd6c941bd99e2315d87dbb",
-  "notes": "Batikalnio projekto sutvarkymas: .doc (seno Word) tekstas, automatinis sutarties atpažinimas iš dokumentų, projekto adreso ir užsakovo užpildymas, sutarties vertė."
+  "url": "stabas-1.16.1.zip",
+  "sha256": "b6e978519d310d8f13d4080ec7c5a3d9c2972e41fd75a2633d3ca382e3e1dd5a",
+  "notes": "F3 pažymų atpažinimas ir sudėliojimas: F3 iš Excel (Priedas Nr. 11) perkelia aktų vertes, mokėjimus ir sulaikymą; F3 PDF/DOCX priskiriami prie aktų; F2 ir F3 formos viename dokumente apdorojamos abi."
 }
