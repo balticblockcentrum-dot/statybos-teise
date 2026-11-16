@@ -1,7 +1,7 @@
 {
-  "version": "1.18.0",
+  "version": "1.19.0",
   "date": "2026-11-16",
-  "url": "stabas-1.18.0.zip",
-  "sha256": "53cae8f9bd2b453f6c61e1dd6be70e0ca60251461ddb4e3a6a34a5ab4402944a",
-  "notes": "Dokumentu nukreipimas i reikiama skyriu (dali): zymejimas sarase ir grupinis priskyrimas"
+  "url": "stabas-1.19.0.zip",
+  "sha256": "519f06d6ea4ac7cf22f2da6787d0a5dc0e16f4c165a63f8e653d0acaee0d3ac1",
+  "notes": "Dokumentu trynimas: pasalinimas is programos arba su originaliais failais"
 }
