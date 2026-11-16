@@ -1,7 +1,7 @@
 {
-  "version": "1.13.0",
+  "version": "1.13.1",
   "date": "2026-11-16",
-  "url": "stabas-1.13.0.zip",
-  "sha256": "841891f81ae44f4ff2205b774e3c750b0c05ff37ece578709bde50c51e81b382",
-  "notes": "Nauja: neprisijungus veikiantis skenų atpažinimas (OCR). Mygtukas „Atpažinti skeną“ aktuose – nuskenuotą F2 aktą galima atpažinti ir importuoti tiesiogiai, be interneto. Atpažintą tekstą galima peržiūrėti, taisyti, kopijuoti ar išsaugoti .txt prie akto. Patobulintas F2 PDF importas: tūkstančių skirtukų ir dešimtainių kablelių tolerancija, tikslesnės sumos."
+  "url": "stabas-1.13.1.zip",
+  "sha256": "d8915ce61ea722e3154db2578a0aefe127e1a810bd4e89aab0c02d4c4811df35",
+  "notes": "Sutvarkytas įkeltų dokumentų išskirstymas į dalis: failai automatiškai priskiriami pagal pavadinimą ir turinį, dokumentų sąraše yra mygtukas „Išskirstyti įkeltus“, o dokumento kortelėje dalį galima pakeisti rankiniu būdu – toks priskyrimas išsaugomas ir po pakartotinio skenavimo."
 }
