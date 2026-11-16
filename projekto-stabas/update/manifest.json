@@ -1,7 +1,7 @@
 {
-  "version": "1.17.0",
+  "version": "1.18.0",
   "date": "2026-11-16",
-  "url": "stabas-1.17.0.zip",
-  "sha256": "7ca4ae890afcce1c4d1ac02c616b90bfc828490d16d7ea06f32cef0d4bdacb11",
-  "notes": "Dokumentu saugykla programoje pagal rusis (sutartys, F2, F3, saskaitos ir kt.), kopiju palaikymas ir atidejimas"
+  "url": "stabas-1.18.0.zip",
+  "sha256": "53cae8f9bd2b453f6c61e1dd6be70e0ca60251461ddb4e3a6a34a5ab4402944a",
+  "notes": "Dokumentu nukreipimas i reikiama skyriu (dali): zymejimas sarase ir grupinis priskyrimas"
 }
