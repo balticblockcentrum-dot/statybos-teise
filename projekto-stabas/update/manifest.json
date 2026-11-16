@@ -1,7 +1,7 @@
 {
-  "version": "1.16.2",
+  "version": "1.17.0",
   "date": "2026-11-16",
-  "url": "stabas-1.16.2.zip",
-  "sha256": "672bf63c2517dfc55520c939fa192eda6ccfd26f357c64c355f952ff8e989cfc",
-  "notes": "F2/F3 dokumentų peržiūra: POST kūno perskaitymas pašalina 501 klaidą po „Rasti aktus ir sutartis"
+  "url": "stabas-1.17.0.zip",
+  "sha256": "3b4ef85683260a3ed149c2390cfc1e01f0aaed7b59d1102dbfec01c776a2fc31",
+  "notes": "Dokumentu saugykla programoje pagal rusis (sutartys, F2, F3, saskaitos ir kt.), kopiju palaikymas ir atidejimas"
 }
