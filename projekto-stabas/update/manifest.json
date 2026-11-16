@@ -1,7 +1,7 @@
 {
-  "version": "1.13.1",
+  "version": "1.14.0",
   "date": "2026-11-16",
-  "url": "stabas-1.13.1.zip",
-  "sha256": "c6a3dba55e3c61f1f1fe91f6ca251add11d15f4cf0407f08d5f59bf7be0304c3",
-  "notes": "Sutvarkytas įkeltų dokumentų išskirstymas į dalis: failai automatiškai priskiriami pagal pavadinimą ir turinį, dokumentų sąraše yra mygtukas „Išskirstyti įkeltus“, o dokumento kortelėje dalį galima pakeisti rankiniu būdu – toks priskyrimas išsaugomas ir po pakartotinio skenavimo."
+  "url": "stabas-1.14.0.zip",
+  "sha256": "4acb377c8f23961730998a264b5cb31f943320f3e0d4efff90f47670640874e0",
+  "notes": "Dokumentų tekstas dabar perskaitomas ir iš skenuotų PDF bei paveikslėlių – automatinis OCR veikia be interneto ir be papildomų programų. Taip pat ištraukiamas Word .docx ir Excel .xlsx turinys. Atpažintas tekstas naudojamas paieškoje, asistente ir dokumentų kortelėje, o sąraše rodoma OCR žyma."
 }
