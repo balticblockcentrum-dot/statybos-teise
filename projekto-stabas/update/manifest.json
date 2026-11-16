@@ -2,6 +2,6 @@
   "version": "1.13.1",
   "date": "2026-11-16",
   "url": "stabas-1.13.1.zip",
-  "sha256": "d8915ce61ea722e3154db2578a0aefe127e1a810bd4e89aab0c02d4c4811df35",
+  "sha256": "c6a3dba55e3c61f1f1fe91f6ca251add11d15f4cf0407f08d5f59bf7be0304c3",
   "notes": "Sutvarkytas įkeltų dokumentų išskirstymas į dalis: failai automatiškai priskiriami pagal pavadinimą ir turinį, dokumentų sąraše yra mygtukas „Išskirstyti įkeltus“, o dokumento kortelėje dalį galima pakeisti rankiniu būdu – toks priskyrimas išsaugomas ir po pakartotinio skenavimo."
 }
